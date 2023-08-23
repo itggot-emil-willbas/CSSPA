@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/*min huvudlayout */
+#wrapper {
+	margin:auto;
+	width:800px;
+	
+}
+
+header {
+	width:100%;
+	height:150px;
+	background:rgba(255,180,97,1.00);
+	padding-top:50px;
+}
+
+section {
+	width:100%;
+	height:400px;
+	background:rgba(151,229,234,1.00);
+	
+}
+
+footer {
+	width:100%;
+	height:200px;
+	background:rgba(255,119,121,1.00);
+	/*-webkit-transform:rotate(7deg);*/
+	clear:both;
+	transition:all 2s ease;
+}
+
+footer:hover {
+	width:100%;
+	height:200px;
+	background:rgba(100,119,121,0.3);
+	/*-webkit-transform:rotate(17deg);*/
+	clear:both;
+	transition:all 4s ease;
+	transform:skew(30deg,30deg);
+}
+
+
+
+header, section, footer {
+	border-radius:15px;
+	margin-bottom:15px;
+	box-shadow:-10px -10px 50px  rgba(185,185,185,0.80);
+	
+	
+}
+
+/*Grafik */
+
+#circle {
+	display:block;
+	width:100px;
+	height:70px;
+	background:white;
+	margin-left:100px;
+	border-radius:50px;
+	text-align:center;
+	padding-top:30px;
+	box-shadow:0px 0px 10px  rgba(185,185,185,0.90) inset;
+	transition:all 2s ease;
+}
+
+#circle:hover {
+	background-color:rgba(151,229,234,1.00);
+	color:white;
+	width:200px;
+	/*transition:all 2s ease;	*/
+}
+
+section {
+	animation: emilanim 5s linear infinite alternate;
+	
+}
+
+/*animationer */
+
+@keyframes emilanim {
+	0% {background:green;}
+	25% {background:pink;}
+	50% {background:blue;}
+	100% {background:yellow;}
+	
+	
+}
+
+
+
+/* text */
+h1 {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* bilder */
